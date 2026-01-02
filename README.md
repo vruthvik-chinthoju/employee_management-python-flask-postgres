@@ -1,7 +1,7 @@
 # Employee-Management Flask Application
 
 ## One-Line Summary
-A Flask web application demonstrating backend development with Python, clean architecture, and real-world project practices.
+A Employee-Management Flask web application demonstrating backend development with Python, clean architecture, and real-world project practices.
 
 ---
 
@@ -80,6 +80,34 @@ Flask-Manager-Application/
 
 ---
 
+## How to Run This Project
+
+### 1. Clone the Repository
+git clone https://github.com/vruthvik-chinthoju/employee_management-python-flask-mysql
+
+2. Navigate to This Folder
+ cd employee_management
+
+3. Create a Virtual Environment
+python -m venv venv
+
+4.Activate the Virtual Environment
+venv\Scripts\activate
+
+5. Install Dependices
+pip install -r requirements.txt
+
+6.Run these Commands
+set FLASK_APP = main.py
+set FLASK_DEBUG = 1
+flask run
+
+7. Open in Browser
+http://127.0.0.1:5000
+
+
+
+
 ## Methods / Approach
 - Backend routing and request handling using Flask
 - Modular Python files for maintainability
@@ -115,17 +143,11 @@ The application runs successfully and demonstrates:
 
 ---
 
-## How to Run This Project
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/USERNAME/REPO_NAME.git
-
-
 ## Conclusion 
 
 This project demonstrates strong fundamentals of Flask backend development, clean code organization, and real-world application structure. It reflects practical skills required for entry-level backend and full-stack development roles.
 
+---
 
 ## Future Work
 
@@ -135,9 +157,12 @@ Build REST APIs
 Improve UI using modern CSS frameworks
 Deploy the application to cloud platforms
 
+---
 
 ## Author 
 
-Name  : Chinthoju Vruthvik
-Contact : 8919721525
-linkdin : Chinthoju Vruthvik(https://www.linkedin.com/in/chinthoju-vruthvik-83754b320?utm_source=shareutm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+**Name:** Chinthoju Vruthvik  
+**Contact:** 8919721525  
+**LinkedIn:** [Chinthoju Vruthvik](https://www.linkedin.com/in/chinthoju-vruthvik-83754b320)
+
+---
