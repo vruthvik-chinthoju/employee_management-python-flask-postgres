@@ -56,32 +56,37 @@ The project can be easily extended to support databases such as SQLite, MySQL, o
 
 ## Project Structure 
 
+## Project Structure
+
+```
 Employee-Management-Flask-Application/
 │
-├── .venv/ # Virtual environment
-├── pycache/ # Python cache files
+├── .venv/                  # Virtual environment
+├── __pycache__/            # Python cache files
 │
-├── main.py # Application entry point
-├── models.py # Database models / business logic
-├── requirements.txt # Project dependencies
-├── README.md # Project documentation
-├── .gitignore # Git ignore file
+├── main.py                 # Application entry point
+├── models.py               # Database models / business logic
+├── requirements.txt        # Project dependencies
+├── README.md               # Project documentation
+├── .gitignore              # Git ignore file
 │
-├── templates/ # HTML templates (Jinja2)
-│ ├── emp.html
-│ ├── login.html
-│ └── register.html
+├── templates/              # HTML templates (Jinja2)
+│   ├── emp.html
+│   ├── login.html
+│   └── register.html
 │
-├── static/ # Static assets
-│ ├── css/
-│ │ └── style.css
-│ ├── js/
-│ │ └── script.js
-│ ├── images/
-│ ├── favicon.png
-│ └── download.jpg
+├── static/                 # Static assets
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   ├── images/
+│   ├── favicon.png
+│   └── download.jpg
 │
-└── downloads/ # Optional downloaded files
+└── downloads/              # Optional downloaded files
+```
+
 
 ## How to Run This Project
 
