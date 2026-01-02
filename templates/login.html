@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="/static/favicon.png" type="image/x-icon">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-image: url("/static/Windows\ 10\ Dark\ Logo\ 4k.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: monospace;
+        }
+
+        .box1 {
+            width: 600px;
+            padding: 40px;
+            /* background-color: rgba(255,255,255,0.2); */
+            background-color: white;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            box-shadow: 0 2px 15px #a100ff ;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 35px;
+        }
+        .box {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            font-family:monospace;
+        }
+        .head{
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 40px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        input{
+            font-family: monospace;
+            padding: 10px;
+            font-size: larger;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border: 1px solid black;
+            cursor: text;
+        }
+        label{
+            font-size: x-large;
+            /* text-decoration: underline; */
+        }
+        #password{
+            margin-right: 40px;
+        }
+        button{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: large;
+            font-family: monospace;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+            border: 1px solid black;
+            background-color: rgb(5, 124, 235);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: large;
+            font-family: monospace;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+            border: 1px solid black;
+            background-color: rgb(36, 15, 226);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .anchor{
+            font-size: x-large;
+        }
+        a:hover{
+            color: black;
+        }
+        li{
+            color:rgb(241, 9, 9);
+            font-family: monospace;
+            font-size: large;
+            font-weight: 900;
+            text-shadow: #2be95b;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: white;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <ul class=flashes>
+        {% for category, message in messages %}
+            <li id="flash" class="{{ category }}">{{ message }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {% endwith %}
+    <div class="box">
+        <div class="head">
+            <h1>Login Details</h1>
+        </div>
+        <div class="box1">
+            <form action="/login" method="POST">
+                <div class="email">
+                    <label for="email">Enter Your Email :</label>
+                    <input type="email" name="email" id="email" placeholder="  Your Email" required>
+                </div>
+                <div class="password">
+                    <label for="password">Enter Your Password :</label>
+                    <input type="password" name="password" id="password" placeholder="  Your Password" required>
+                </div>
+                 <div class="button">
+                    <button type="submit">Login</button>
+                </div>
+                <div class="anchor">
+                    <a href="{{ url_for('register') }}">Don't have an account? Register</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee-Management</title>
+    <link rel="shortcut icon" href="/static/favicon.png" type="image/x-icon">
+    <style>
+        th{
+            background-color: black;
+            color: white;
+        }
+        .view td{
+            background-color: white;
+            color: black;
+        }
+        input,select{
+            font-family: monospace;
+            /* font-size: small; */
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        
+        label{
+            font-weight: 900;
+            background-color: white;
+            /* border: 1px solid black; */
+            padding: 8px;
+            margin-bottom: 10px;
+            text-decoration: underline;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        h1{
+            width: 350px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid black;
+            font-family: monospace;
+            text-decoration: underline;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        #submit{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 80px;
+            color: black;
+        }
+        table{
+            display: flex;
+            justify-content: center;
+        }
+        body{
+            background-image: url("{{ url_for('static',filename='Free-download-Aesthetic-Plain-Backgrounds-HD.jpg') }}") ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+        .data{
+            background-color:white;
+            width: 450px;
+            padding: 10px;
+            padding-top: 20px;
+            border: 1px solid black;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .emp{
+            display: flex;
+            justify-content: center;
+        }
+        .tab2{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        button{
+            font-family: monospace;
+            background-color: rgb(84, 187, 228);
+            color: white;
+            font-family: 900;
+            border: 1px solid black;
+            padding: 8px 10px;
+            cursor: pointer;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        form{
+            font-family: monospace;
+            font-size: large;
+        }
+        table{
+            font-family: monospace;
+            font-size: large;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .view .one{
+            border-top-left-radius: 10px;
+        }
+        .view .two{
+            border-top-right-radius: 10px;
+        }
+        .log{
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            border: 1px solid black;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .select{
+            background-color: rgb(51, 255, 0);
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            border: 1px solid black;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .head2{
+            /* width: 300px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .full{
+            /* padding: 10px; */
+            border: none;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Employee Data</h1>
+    </div>
+    <div class="emp">
+        <div class="data">
+            <form action="/employee" method="POST">
+                <table>
+                    <tr>
+                        <td><label for="name">Employee Name :</label></td>
+                        <td><input type="text" name="name" placeholder="  Enter The Name " required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Employee Email :</label></td>
+                        <td><input type="email" name="email" placeholder="  Enter The Email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="department">Employee Department :</label></td>
+                        <td>
+                            <select name="department" id="department" required>
+                                <option value="">--Select--</option>
+                                <option value="Development">Development</option>
+                                <option value="Testing">Testing</option>
+                                <option value="Hr">Hr</option>
+                                <option value="Support">Support</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Employee Salary :</label></td>
+                        <td><input type="number" name="salary" placeholder="  Enter The Salary " required></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="submit">SUBMIT</button>
+                        </td>
+                        <td>
+                            <a href="{{ url_for('logout') }}" class="log">Logout</a>
+                        </td>
+                    </tr>   
+                </table>
+            </form>
+        </div>
+    </div>
+   <div class="tab2">
+    <div class="tab1">
+         <table border="1" cellpadding="10" class="view">
+            <tr>
+                <th class="one">Employee Id</th>
+                <th>Employee Name</th>
+                <th>Employee Email</th>
+                <th>View</th>
+                <th class="two">Delete</th>
+            </tr>
+            {% for emp in emps %}
+                <tr>
+                    <td class="three">{{ emp.id }}</td>
+                    <td>{{ emp.name }}</td>
+                    <td>{{ emp.email }}</td>
+                    <td><a href="{{ url_for('emp', id=emp.id) }}" style="text-decoration:none; color:black;" class="select">View</a></td>
+                    <td class="select"><a href="{{ url_for('delete', id=emp.id) }}" style="text-decoration:none; color:black;background-color: chocolate;" class="select">Delete</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+   </div>
+    {% if selected %}
+        <div class="head2">
+            <h1>Single Employee Details</h1>
+        </div>
+        <form action="/employee/update/{{ selected.id }}/" method="POST">
+            <table border="1" cellpadding="10">
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Update</th>
+                </tr>
+                <tr>
+                    <td><input class="full" type="text" name="id" value="{{ selected.id }}"></td>
+                    <td><input class="full" type="text" name="name" value="{{ selected.name }}"></td>
+                    <td><input class="full" type="text" name="email" value="{{ selected.email }}"></td>
+                    <td><input class="full" type="text" name="department" value="{{ selected.department }}"></td>
+                    <td><input class="full" type="number" name="salary" value="{{ selected.salary }}"></td>
+                    <td><button>UPDATE</button></td>
+                </tr>
+            </table>
+        </form>
+    {% endif %} 
+</body>
+</html>
