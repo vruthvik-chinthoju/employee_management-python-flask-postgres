@@ -90,29 +90,44 @@ Employee-Management-Flask-Application/
 
 ## How to Run This Project
 
-1. Clone the Repository
-git clone https://github.com/vruthvik-chinthoju/employee_management-python-flask-mysql
+### 1. Clone the Repository
+```bash
+git clone https://github.com/vruthvik-chinthoju/employee_management-python-flask-mysql.git
 
-2. Navigate to This Folder
-cd employee_management
+## How to Run This Project
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/vruthvik-chinthoju/employee_management-python-flask-mysql.git
+
+2. Navigate to the Project Folder
+cd employee_management-python-flask-mysql
 
 3. Create a Virtual Environment
 python -m venv venv
-
-4.Activate the Virtual Environment
+4. Activate the Virtual Environment
+Windows
 venv\Scripts\activate
 
-5. Install Dependices
-pip install -r requirements.txt
+Mac / Linux
+source venv/bin/activate
 
-6.Run these Commands
- 1.set FLASK_APP = main.py
- 2.set FLASK_DEBUG = 1
- 3.flask run
+5. Install Dependencies
+pip install -r requirements.txt
+6. Run the Application
+Windows
+set FLASK_APP=main.py
+set FLASK_DEBUG=1
+
+flask run
+Mac / Linux
+export FLASK_APP=main.py
+export FLASK_DEBUG=1
+flask run
 
 7. Open in Browser
 http://127.0.0.1:5000
-
+```
 ---
 ## Methods / Approach
 - Backend routing and request handling using Flask
