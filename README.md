@@ -10,6 +10,24 @@ Employee-Management Application
 
 ---
 
+## 📌 Table of Contents
+- [Project Title](#project-title)
+- [Overview](#overview)
+- [Problem Statement](#problem-statement)
+- [Dataset](#dataset)
+- [Tools and Technologies](#tools-and-technologies)
+- [Project Structure](#project-structure)
+- [Methods / Approach](#methods--approach)
+- [Key Insights](#key-insights)
+- [Output](#output)
+- [Result](#result)
+- [How to Run This Project](#how-to-run-this-project)
+- [Conclusion](#conclusion)
+- [Future Work](#future-work)
+- [Author](#author)
+
+---
+
 ## Overview
 The Employee-Management Flask Application is a backend-focused web project built using Flask and Python. It demonstrates how a real-world web application is structured by separating backend logic, templates, and static assets. The project follows clean coding practices and is suitable for showcasing backend and full-stack fundamentals to recruiters.
 
