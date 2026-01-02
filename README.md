@@ -1,17 +1,17 @@
-# Flask Manager Application
+# Employee-Management Flask Application
 
 ## One-Line Summary
-A job-ready Flask web application demonstrating backend development with Python, clean architecture, and real-world project practices.
+A Flask web application demonstrating backend development with Python, clean architecture, and real-world project practices.
 
 ---
 
 ## Project Title
-Flask Manager Application
+Employee-Management Application
 
 ---
 
 ## Overview
-The Flask Manager Application is a backend-focused web project built using Flask and Python. It demonstrates how a real-world web application is structured by separating backend logic, templates, and static assets. The project follows clean coding practices and is suitable for showcasing backend and full-stack fundamentals to recruiters.
+The Employee-Management Flask Application is a backend-focused web project built using Flask and Python. It demonstrates how a real-world web application is structured by separating backend logic, templates, and static assets. The project follows clean coding practices and is suitable for showcasing backend and full-stack fundamentals to recruiters.
 
 ---
 
@@ -34,6 +34,31 @@ The project can be easily extended to support databases such as SQLite, MySQL, o
 - **Backend:** Flask (Python)  
 - **Version Control:** Git  
 - **Repository Hosting:** GitHub  
+
+
+## Project Structure 
+
+Flask-Manager-Application/
+│
+├── main.py                 # Application entry point
+├── models.py               # Data models / business logic
+├── requirements.txt        # Project dependencies
+├── README.md               # Project documentation
+│
+├── templates/              # HTML templates (Jinja2)
+│   ├── index.html
+│   ├── about.html
+│   └── layout.html
+│
+├── static/                 # Static files
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── images/
+│
+└── .gitignore              # Git ignore file
+
 
 ---
 
@@ -87,13 +112,9 @@ This project demonstrates strong fundamentals of Flask backend development, clea
 ## Future Work
 
 Integrate a database (SQLite / PostgreSQL / MySQL)
-
 Implement user authentication and authorization
-
 Build REST APIs
-
 Improve UI using modern CSS frameworks
-
 Deploy the application to cloud platforms
 
 
@@ -101,4 +122,4 @@ Deploy the application to cloud platforms
 
 Name  : Chinthoju Vruthvik
 Contact : 8919721525
-linkdin : Chinthoju Vruthvik
+linkdin : Chinthoju Vruthvik(https://www.linkedin.com/in/chinthoju-vruthvik-83754b320?utm_source=shareutm_campaign=share_via&utm_content=profile&utm_medium=android_app)
