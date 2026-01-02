@@ -104,3 +104,7 @@ def logout():
     logout_user()
     flash("Logged out Successfully")
     return redirect(url_for('login'))
+
+
+if __name__ == "__main__":
+    app.run()
