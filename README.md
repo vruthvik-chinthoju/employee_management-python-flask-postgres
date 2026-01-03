@@ -24,7 +24,7 @@ This project addresses that gap by implementing a complete backend workflow — 
 - [Database](#database)
 - [Tools and Technologies](#tools-and-technologies)
 - [Project Structure](#project-structure)
-- [Documentation & System Design](#documentation-system-design)
+- [Documentation and System Design](#documentation-and-system-design)
 - [Methods / Approach](#methods--approach)
 - [Key Insights](#key-insights)
 - [Key Features](#key-features)
