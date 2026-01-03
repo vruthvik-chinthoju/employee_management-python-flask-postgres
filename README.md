@@ -1,7 +1,7 @@
 # Employee-Management Flask Application
 
-## One-Line Summary
-A Employee-Management Flask web application demonstrating backend development with Python, clean architecture, and real-world project practices.
+## 🔗 Live Demo
+https://employee-management-4jxl.onrender.com
 
 ---
 
@@ -10,18 +10,28 @@ Employee-Management Application
 
 ---
 
+## Problem Statement
+Many beginner projects remain limited to local environments and lack real-world deployment experience.  
+This project addresses that gap by implementing a complete backend workflow — from development to cloud deployment — including authentication, database integration, and production debugging.
+
+---
+
 ## 📌 Table of Contents
 - [Project Title](#project-title)
+- [Problem Statement](#problem-statement)
 - [Overview](#overview)
 - [Problem Statement](#problem-statement)
-- [Dataset](#dataset)
+- [Database](#database)
 - [Tools and Technologies](#tools-and-technologies)
 - [Project Structure](#project-structure)
 - [Methods / Approach](#methods--approach)
 - [Key Insights](#key-insights)
+- [Key Features](#key-features)
 - [Output](#output)
 - [Result](#result)
+- [What I Learned](#what-i-learned)
 - [How to Run This Project](#how-to-run-this-project)
+- [Deplyment](#deployment)
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
 - [Author](#author)
@@ -29,32 +39,36 @@ Employee-Management Application
 ---
 
 ## Overview
-The Employee-Management Flask Application is a backend-focused web project built using Flask and Python. It demonstrates how a real-world web application is structured by separating backend logic, templates, and static assets. The project follows clean coding practices and is suitable for showcasing backend and full-stack fundamentals to recruiters.
+The Employee Management Flask Application is a **production-deployed web application** built using Flask and PostgreSQL.  
+It supports **user authentication**, **employee CRUD operations**, and demonstrates real-world backend development practices including cloud deployment, environment-based configuration, and session management.
+
+The application is deployed on **Render** and is suitable for showcasing backend and full-stack fundamentals to recruiters.
 
 ---
 
-## Problem Statement
-Many beginner projects lack proper structure, scalability, and real-world relevance. This project addresses that gap by implementing a well-organized Flask application that reflects industry-style backend development and clean project architecture.
 
----
+## Database
+- **PostgreSQL (Production)**
+- Hosted on **Render**
+- Connected securely using environment variables
 
-## Dataset
-This project does not use an external dataset.  
-All data handling is managed internally through application logic.  
-The project can be easily extended to support databases such as SQLite, MySQL, or PostgreSQL.
+The database stores:
+- User accounts (authentication)
+- Employee records (CRUD operations)
 
 ---
 
 ## Tools and Technologies
 - **Programming Language:** Python  
 - **Framework:** Flask  
+- **Database:** PostgreSQL  
+- **ORM:** SQLAlchemy  
+- **Authentication:** Flask-Login  
 - **Frontend:** HTML, CSS  
-- **Backend:** Flask (Python)  
-- **Version Control:** Git  
-- **Repository Hosting:** GitHub  
+- **Deployment Platform:** Render  
+- **Version Control:** Git & GitHub  
 
-
-## Project Structure 
+---
 
 ## Project Structure
 
@@ -162,6 +176,16 @@ http://127.0.0.1:5000
 
 ---
 
+## Key Features
+- User Registration and Login
+- Session-based authentication
+- Add, view, and delete employees
+- Secure database connection using environment variables
+- Cloud deployment with Render
+- Responsive UI (mobile-friendly improvements in progress)
+
+---
+
 ## Key Insights
 - Understanding Flask’s request–response lifecycle
 - Separation of frontend and backend concerns
@@ -179,11 +203,23 @@ http://127.0.0.1:5000
 ---
 
 ## Result
-The application runs successfully and demonstrates:
-- Flask routing and backend logic
-- HTML template rendering
-- Static file usage for styling
-- Organized and scalable project layout
+
+The application successfully demonstrates:
+-Backend development using Flask
+-Authentication and session handling
+-PostgreSQL integration
+-Real-world deployment and debugging
+-Clean and scalable project structure
+
+---
+
+## What I Learned 
+
+-Differences between local and cloud environments
+-Importance of environment variables in production
+-Database connectivity issues and solutions
+-Session persistence and security handling
+-CI/CD-style auto-deployment using Render
 
 ---
 
@@ -195,11 +231,21 @@ This project demonstrates strong fundamentals of Flask backend development, clea
 
 ## Future Work
 
-Integrate a database (SQLite / PostgreSQL / MySQL)
-Implement user authentication and authorization
-Build REST APIs
-Improve UI using modern CSS frameworks
-Deploy the application to cloud platforms
+Role-based access (Admin/User)
+Search and filter functionality
+Pagination for large datasets
+REST API version of the application
+UI enhancement using a modern CSS framework
+
+---
+
+## Deployment
+
+The application is deployed on Render with:
+Managed PostgreSQL database
+Environment variables (DATABASE_URL, SECRET_KEY)
+Auto-deployment from GitHub
+Production-ready configuration
 
 ---
 
