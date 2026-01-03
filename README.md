@@ -264,20 +264,12 @@ Production-ready configuration
 ## Update
 ![Update](screenshots/Update.png)
 
-### Mobile View Register
-![Mobile View Register](screenshots/Mobile-View-Register.jpg)
+### 📱 Mobile View – Login
+![Mobile Login](screenshots/Mobile%20View%20Login.jpg)
 
-### Mobile View Login
-![Mobile View Login](screenshots/Mobile-View-Login.jpg)
+### 📱 Mobile View – Dashboard
+![Mobile Dashboard](screenshots/Mobile%20View%20Dashboard.jpg)
 
-### Mobile View Dashboard
-![Mobile View Dashboard](screenshots/Mobile-View-Dashboard.jpg)
-
-### Mobile View Employee
-![Mobile View Employee](screenshots/Mobile-View-Employee.jpg)
-
-### Mobile View Update
-![Mobile View Update](screenshots/Mobile-View-Update.jpg)
 
 ----
 
