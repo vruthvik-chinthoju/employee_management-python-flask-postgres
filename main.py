@@ -6,14 +6,15 @@ import os
 from datetime import timedelta
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///employee.db"
+
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL")
 app.secret_key = os.getenv("SECRET_KEY")
+
 app.config.update(
     PERMANENT_SESSION_LIFETIME=timedelta(days=1),
     SESSION_COOKIE_HTTPONLY=True,
     SESSION_COOKIE_SAMESITE="Lax"
 )
-
 
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
