@@ -265,19 +265,19 @@ Production-ready configuration
 ![Update](screenshots/Update.png)
 
 ### Mobile View Register
-![Mobile View Register](screenshots/Mobile-View-Register.png)
+![Mobile View Register](screenshots/Mobile-View-Register.jpg)
 
 ### Mobile View Login
-![Mobile View Login](screenshots/Mobile-View-Login.png)
+![Mobile View Login](screenshots/Mobile-View-Login.jpg)
 
 ### Mobile View Dashboard
-![Mobile View Dashboard](screenshots/Mobile-View-Dashboard.png)
+![Mobile View Dashboard](screenshots/Mobile-View-Dashboard.jpg)
 
 ### Mobile View Employee
-![Mobile View Employee](screenshots/Mobile-View-Employee.png)
+![Mobile View Employee](screenshots/Mobile-View-Employee.jpg)
 
 ### Mobile View Update
-![Mobile View Update](screenshots/Mobile-View-Update.png)
+![Mobile View Update](screenshots/Mobile-View-Update.jpg)
 
 ----
 
