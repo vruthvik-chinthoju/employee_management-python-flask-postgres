@@ -261,6 +261,9 @@ Production-ready configuration
 ### Dashboard
 ![Dashboard](screenshots/Dashboard.png)
 
+## Update
+![Update](screenshots/Update.png)
+
 ### Mobile View
 ![Mobile View](screenshots/mobile-view.png)
 
