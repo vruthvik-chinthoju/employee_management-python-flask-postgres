@@ -32,6 +32,7 @@ This project addresses that gap by implementing a complete backend workflow — 
 - [What I Learned](#what-i-learned)
 - [How to Run This Project](#how-to-run-this-project)
 - [Deplyment](#deployment)
+- [Screenshots](#screenshots)
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
 - [Author](#author)
@@ -248,6 +249,22 @@ Auto-deployment from GitHub
 Production-ready configuration
 
 ---
+
+## Screenshots
+
+### Login Page
+![Login Page](screenshots/login.png)
+
+### Register Page
+![Register Page](screenshots/register.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Mobile View
+![Mobile View](screenshots/mobile-view.png)
+
+----
 
 ## Author 
 
